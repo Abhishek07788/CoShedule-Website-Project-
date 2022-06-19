@@ -8,6 +8,25 @@
     <title>  Pricing - CoSchedule</title>
     <link rel="icon" href="title logo.png">
     <style>
+          /* ------------------------msg logo part--------------------------- */
+          #msglogo{
+            width: 70px;
+            position:fixed;
+            margin-left:93%;
+            margin-top:40%;
+
+        }
+        #msglogo:hover{
+            animation:shake 10s;
+            animation-iteration-count:infinite;
+        }
+        @keyframes shake{
+            0% {transform: translate(5px ,1px);}
+            25% {transform: translate(-3px ,-1px);}
+            55% {transform: translate(3px ,-1px);}
+        }
+        /* -------------------------------------------------------------------- */
+
         body {
             background-color: #f8f8f8;
             font-family: "MuseoSans-300", sans-serif;
@@ -309,14 +328,16 @@
         #labelpa{
             color: #f37E5D;
         }
+
     </style>
 
 </head>
 
 <body>
+    <a href="login.html"><img id="msglogo"; src="https://marketing-assets.pinpointhq.com/wp-content/uploads/2020/03/pinpoint-myinterview-integration-dd97735c32858890370432e28b2a9ebc.png" alt=""></a>
     <div id="top">
         <div id="img">
-            <img src="https://coschedule.com/img/cos-logo-full-color.svg" alt="error">
+            <a href="CoScheduleHOME.html"><img src="https://coschedule.com/img/cos-logo-full-color.svg" alt="error"></a>
         </div>
         <h1>
             Choose Your All-In-One Marketing Calendar
@@ -460,7 +481,6 @@
                 <h3 id="h3Blue">Where can I find other helpful resources?</h3>
                 <p id="pBlue">Our<a id="labelpa" href="https://coschedule.com/guide">guides </a>will show you how to get organized with your new CoSchedule calendar. Review our Power Tips for inspiration. Or visit the <a id="labelpa" href="https://institute.coschedule.com/courses/category/CoSchedule-Training">Actionable Marketing Institute </a> to learn how to improve your marketing. </p>
             </div>
-           
         </div>
     </div>
 </body>

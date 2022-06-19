@@ -45,6 +45,9 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        height: 3rem;
+        /* padding-top: 0.7rem;
+        padding-bottom: 0.6rem; */
     }
 
     #nav-inner:hover {
@@ -125,7 +128,49 @@
         margin-bottom: 50px;
         color: #626060;
     }
+    #nav-inner:hover + div{
+        display: block;
+        display: grid;
+    }
+    #menu:hover{
+        display: grid;
+    }
+    #menu {
+        padding: 2rem;
+        width: 60%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        text-align: center;
+        background-color: white;
+        position: fixed;
+        top: 3.2rem;
+        left: 3.3rem;
+        display: none;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
 
+    #menu img {
+        width: 2rem;
+        display: block;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+  
+    #menu>div {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        border-radius: 5px;
+        background-color: white;
+        cursor: pointer;
+    }
+    #menu>div h2{
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+        font-size: 16px;
+        font-weight: 400;
+    }
     #section>div:first-child {
         width: 60%;
         margin: auto;
@@ -134,7 +179,7 @@
         gap: 1rem;
         text-align: center;
         margin-top: -30px;
-        background-color: white;
+        /* background-color: white; */
 
 
     }
@@ -150,6 +195,8 @@
     #section>div:first-child>div {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
         border-radius: 5px;
+        background-color: white;
+        cursor: pointer;
     }
 
     #section>div h2 {
@@ -231,7 +278,7 @@
     .card p a {
         color: white;
         font-size: 12px;
-   
+
     }
 
     #mid>div:last-child {
@@ -451,100 +498,115 @@
         width: 70%;
         margin: auto;
     }
-    #sixth_section{
+
+    #sixth_section {
         padding-bottom: 50px;
         padding-top: 50px;
     }
-    #card1{
-        width:60%;
+
+    #card1 {
+        width: 60%;
         margin: auto;
     }
-    #bottom{
-            width: 100%;
-            margin: auto;
-           
-        }
-        #bottompart{
-            display: grid;
-            margin: auto;
-            width: 75%;
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(2,auto);
-            justify-content: center;
-            align-items: center;
-            text-align:left;
-            gap: 30px;
-            margin-top: 30px;
-        }
-        #bottom p{
-            margin-left: 20px;
-            color: gray;
-            font-family: MuseoSans-700, sans-serif;
-            font-size: 13px;
-        }
-        /* #bottom>div{
-        } */
-        #logo{
-            display:grid;
-            grid-template-columns: repeat(3,1fr);
-            width: 70%;
-            height: 30%;
-            margin: 1rem;
-        }
-        #logo>img{
-            width: 80%;
-            height: 80%;
-        }
-        #bottomlogoimg img{
-            width:25px;
-            height: 25px;
-            margin-top:0px;
-            margin-bottom: 10px;
-            margin-left: 10px;
-        }
-        #bottomlogoimg p{
-            margin-top: 3px;
-        }
-        #bottom h2{
-            color: #4b4b4b;
-            font-family: MuseoSans-700, sans-serif;
-            font-size: 15px;
-            margin-left: 10px;
-        }
-        #bottomlogoimg2 p{
-            margin-top: 5px;
-            margin-bottom: 13px;
-            margin-left: 10px;
-        }
-        #copyright{
-            width: 100%;
-            height: 80px;
-            margin: auto;
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-around;
-        }
-        #Socialmedialogo{
-            display: grid;
-            grid-template-columns: repeat(6,1fr);
-            gap: 10px;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-        #Socialmedialogo>a>img{
-            width: 30px;
-            margin-bottom: 30px;
-        }
-        #bottom a{
-            color: grey;
-            
-        }
-        #bottompart>div:first-child p{
-            /* margin-top: 5px; */
-            margin-bottom: 10px;
-        }
 
+    #bottom {
+        width: 100%;
+        margin: auto;
+
+    }
+
+    #bottompart {
+        display: grid;
+        margin: auto;
+        width: 75%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, auto);
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    #bottom p {
+        margin-left: 20px;
+        color: gray;
+        font-family: MuseoSans-700, sans-serif;
+        font-size: 13px;
+    }
+
+    /* #bottom>div{
+        } */
+    #logo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 70%;
+        height: 30%;
+        margin: 1rem;
+    }
+
+    #logo>img {
+        width: 80%;
+        height: 80%;
+    }
+
+    #bottomlogoimg img {
+        width: 25px;
+        height: 25px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    #bottomlogoimg p {
+        margin-top: 3px;
+    }
+
+    #bottom h2 {
+        color: #4b4b4b;
+        font-family: MuseoSans-700, sans-serif;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    #bottomlogoimg2 p {
+        margin-top: 5px;
+        margin-bottom: 13px;
+        margin-left: 10px;
+    }
+
+    #copyright {
+        width: 100%;
+        height: 80px;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #Socialmedialogo {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #Socialmedialogo>a>img {
+        width: 30px;
+        margin-bottom: 30px;
+    }
+
+    #bottom a {
+        color: grey;
+
+    }
+
+    #bottompart>div:first-child p {
+        /* margin-top: 5px; */
+        margin-bottom: 10px;
+    }
 </style>
 
 <body>
@@ -554,6 +616,20 @@
             <div id="nav-inner">
                 <p id="explore">Explore </p>
                 <img src="arrow_drop_down_FILL0_wght400_GRAD0_opsz20.svg">
+            </div>
+            <div id="menu" class="links">
+                <div><img src="https://coschedule.com/img/product/marketing-calendar-product-icon.png" alt="">
+                    <h2>Calender Organiser</h2>
+                </div>
+                <div><img src="https://coschedule.com/img/product/content-organizer-product-icon.png" alt="">
+                    <h2>Content Organiser</h2>
+                </div>
+                <div><img src="https://coschedule.com/img/product/work-organizer-product-icon.png" alt="">
+                    <h2>Work Organiser</h2>
+                </div>
+                <div><img src="https://coschedule.com/img/product/asset-organizer-product-icon.png" alt="">
+                    <h2>Asset Organiser</h2>
+                </div>
             </div>
         </div>
         <button id="demo_btn">Get A Demo</button>
@@ -567,7 +643,7 @@
             projects, and teams.</p>
     </div>
     <div id="section">
-        <div>
+        <div class="links">
             <div><img src="https://coschedule.com/img/product/marketing-calendar-product-icon.png" alt="">
                 <h2>Calender Organiser</h2>
             </div>
@@ -730,97 +806,138 @@
         </div>
         <div id="bottom">
             <div id="bottompart">
-            <div>
-                <a href="CoScheduleHome.html"><img style="width:50px; margin-left: 15px;" src="data:image/png;base64,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" alt=""></a>
-                <p>Sign Up</p>
-                <p>Request A Demo</p>
-                <p>Sign In</p>
-                <div id="logo">
-                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75" alt="">
-                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fgartner-badge.png&w=64&q=75" alt="">
-                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-badge.png&w=48&q=75" alt="">
+                <div>
+                    <a href="CoScheduleHome.html"><img style="width:50px; margin-left: 15px;"
+                            src="data:image/png;base64,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"
+                            alt=""></a>
+                    <p>Sign Up</p>
+                    <p>Request A Demo</p>
+                    <p>Sign In</p>
+                    <div id="logo">
+                        <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fg2crowd-badge.png&w=96&q=75"
+                            alt="">
+                        <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fgartner-badge.png&w=64&q=75"
+                            alt="">
+                        <img src="https://coschedule.com/_next/image?url=%2Fimg%2Ftestimonials%2Fforbes-badge.png&w=48&q=75"
+                            alt="">
+                    </div>
+                </div>
+                <div id="bottomlogoimg">
+                    <h2>PRODUCTS</h2>
+                    <div style="display:flex;">
+                        <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-calendar-product-icon.png&w=32&q=75"
+                            alt="">
+                        <p>Marketing Calendar</p>
+                    </div>
+                    <div style="display:flex;">
+                        <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-suite-product-icon.png&w=32&q=75"
+                            alt="">
+                        <p><a href="">Marketing Suite</a></p>
+                    </div>
+                    <div style="display:flex;">
+                        <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_77217643bee6578bf2bde1b69e038bbf/headline-studio.png"
+                            alt="">
+                        <p><a href="">Headine Stidio</a></p>
+                    </div>
+                    <div style="display:flex;">
+                        <img src="https://media-exp2.licdn.com/dms/image/C560BAQHqwgn4hLa_TQ/company-logo_200_200/0/1624907790831?e=1663200000&v=beta&t=DOnVuPxXN5_V60sIrCpFM8hnnwYLXFish_iNvPFvZcI"
+                            alt="">
+                        <p><a href="CoScheduleheadlineStudio.html">Actionable Marketing Institute</a></p>
+                    </div>
+                </div>
+                <div id="bottomlogoimg2">
+                    <h2 style="margin-top:-5px;">WHY COSCHEDULE</h2>
+                    <P>Costomer Stories</P>
+                    <p>Support</p>
+                    <p>Product Announcements</p>
+                    <p>Pricing</p>
+                </div>
+                <div id="bottomlogoimg2">
+                    <h2 style="margin-top:27px;">COMPANY</h2>
+                    <P>About</P>
+                    <p>Jobs</p>
+                    <p>Press</p>
+                    <p>Contact us</p>
+                    <p>Affiliate Program</p>
+                </div>
+                <div></div>
+                <div id="bottomlogoimg2">
+                    <h2 style="margin-top:27px;">RESOURCES</h2>
+                    <p>Marketing Blog</p>
+                    <p>CoSchedule Guide</p>
+                    <p>Marketing Strategry Report</p>
+                    <p>Agile Marketing Guide</p>
+                    <p>Actionable Marketing Podcast</p>
+                    <p>10x Marketing Formula Book</p>
+                    <p>Get Started with Agile Marketing Book</p>
+                </div>
+                <div id="bottomlogoimg2" style="margin-top:-89px;">
+                    <h2 style="margin-top:27px;">TOPIC LIBRARIES</h2>
+                    <P>Marketing</P>
+                    <p>Marketing Idias</p>
+                    <p>Marketing Strategry</p>
+                    <p>Content Marketing</p>
+                </div>
+                <div id="bottomlogoimg2" style="margin-top:-89px;">
+                    <h2 style="margin-top:27px;">TOOLS</h2>
+                    <P>Headine Analyzer</P>
+                    <p>Email Subject Line Tester</p>
+                    <p>Social Message Optimizer</p>
+                    <p>Marketing Dictionary</p>
                 </div>
             </div>
-            <div id="bottomlogoimg">
-                <h2>PRODUCTS</h2>
-                <div style="display:flex;">
-                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-calendar-product-icon.png&w=32&q=75" alt="">
-                    <p>Marketing Calendar</p>
-                </div>
-                <div style="display:flex;">
-                    <img src="https://coschedule.com/_next/image?url=%2Fimg%2Fproduct%2Fmarketing-suite-product-icon.png&w=32&q=75" alt="">
-                    <p><a href="">Marketing Suite</a></p>
-                </div>
-                <div style="display:flex;">
-                    <img src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_77217643bee6578bf2bde1b69e038bbf/headline-studio.png" alt="">
-                    <p><a href="">Headine Stidio</a></p>
-                </div>
-                <div style="display:flex;">
-                    <img src="https://media-exp2.licdn.com/dms/image/C560BAQHqwgn4hLa_TQ/company-logo_200_200/0/1624907790831?e=1663200000&v=beta&t=DOnVuPxXN5_V60sIrCpFM8hnnwYLXFish_iNvPFvZcI" alt="">
-                    <p><a href="CoScheduleheadlineStudio.html">Actionable Marketing Institute</a></p>
-                </div>
-            </div>
-            <div id="bottomlogoimg2">
-                <h2 style="margin-top:-5px;">WHY COSCHEDULE</h2>
-                <P>Costomer Stories</P>
-                <p>Support</p>
-                <p>Product Announcements</p>
-                <p>Pricing</p>
-            </div>
-            <div id="bottomlogoimg2">
-                <h2 style="margin-top:27px;">COMPANY</h2>
-                <P>About</P>
-                <p>Jobs</p>
-                <p>Press</p>
-                <p>Contact us</p>
-                <p>Affiliate Program</p>
-            </div>
-            <div></div>
-            <div id="bottomlogoimg2">
-                <h2 style="margin-top:27px;">RESOURCES</h2>
-                <p>Marketing Blog</p>
-                <p>CoSchedule Guide</p>
-                <p>Marketing Strategry Report</p>
-                <p>Agile Marketing Guide</p>
-                <p>Actionable Marketing Podcast</p>
-                <p>10x Marketing Formula Book</p>
-                <p>Get Started with Agile Marketing Book</p>
-            </div>
-            <div id="bottomlogoimg2" style="margin-top:-89px;">
-                <h2 style="margin-top:27px;">TOPIC LIBRARIES</h2>
-                <P>Marketing</P>
-                <p>Marketing Idias</p>
-                <p>Marketing Strategry</p>
-                <p>Content Marketing</p>
-            </div>
-            <div id="bottomlogoimg2" style="margin-top:-89px;">
-                <h2 style="margin-top:27px;">TOOLS</h2>
-                <P>Headine Analyzer</P>
-                <p>Email Subject Line Tester</p>
-                <p>Social Message Optimizer</p>
-                <p>Marketing Dictionary</p>
-            </div>
-        </div>
         </div>
         <div id="copyright">
-            <div style="margin-top:14px; color:grey;">© Copyright 2022, all rights reserved. See our <a style="color:blue;" href="https://coschedule.com/terms">Terms & Policies</a></div>
+            <div style="margin-top:14px; color:grey;">© Copyright 2022, all rights reserved. See our <a
+                    style="color:blue;" href="https://coschedule.com/terms">Terms & Policies</a></div>
             <div id="Socialmedialogo">
-                <a href="https://www.g2.com/products/coschedule-marketing-suite/reviews"><img src="data:image/png;base64,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" alt=""></a>
-                <a href="https://www.facebook.com/coschedule"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAV1BMVEX///8AAADKyspmZmaCgoL39/fk5OSIiIj09PSjo6NsbGzd3d3p6enExMSsrKydnZ12dnaWlpZFRUU9PT0hISEmJibU1NRhYWFXV1dKSkpcXFy4uLgcHBxL78OkAAADRklEQVR4nO1b2XKDMAyME24Icc6mx/9/Z6G0DUlAWsmmnul4HztjdutjJcvKahURERERERGhQ9Fk23aX2Kqyya7dZk3xh+TpZW9fzQMO1X6d/gV7Vr49ct9wLbNl2ZvyOM8+4Fg2i9HX9sTR9zjZehn6DcI+YHPxTp9VOH2Pyu8spImMvkfi8WCuz3L+bi+sPdGnuYa+R+7FGDL25M3j6MEWtnr6HltX/p0bvzE7N3718t+Qu/Bbd35jbGB+BwUe5n+AchWc998Nqp3oeP7uoTiNmU9+Y8SOlDr43xSOUlf2tgF/INyIa9/8xohiYwHHX/s+Xl3KOM6SRUDzj8ekg3SuBOcHT8DH0+GirRM/CWD+95x50gIqlP+C8bfPI5nggSaqWP59mBjJCNhg/DU2Ae9yAeAUYEH4Y+pUcUOhwNxA9y/zotF+Qu6NJcRvyrtBlwEvslHTAKPQeAs0V2xMF5N4fjQMj61dELl4MwJX4E4AO/M38LkROptjAYKL+5XjT9EvKQUYLibCiYBWAJcW7JcWsGcEwIUQ5SbkQmJx4D/xmndIxrZe5t8ARh/owkkD/A9EeolkUrQbIzZEpFbIWtBWhFyH5gUUiI3Tl6TWTQCSTE8kUiMgF9J5AcgOYswY2UXzAqBARmfnSDY0/wXIRumsCPGheQHIDmKcyE0AVNKgBSBLYLO6w9jQvv5Q1xkUE+glwIvS4+NMvKE8g96EeF1IGw2ZYwhtIzcBtBHhlSm1ANqK8dKUWgAdjCAzdRNAh2MkIXETwCQkupRMIoCrUgRPSoOn5cEvJsGvZrAZKwXwBQLN9VwgAKgVggUKnYCp0tojwAKBTgBSogGLVCoBUJEKLNOpBGDvZ1ihUiUArNVC39MIAEu12BRoBMBdFUhIVAiAy/WQGSkECJ7ugOxcLkDybpby92yxgLOoqYVPC8QChC0tbPlXKkD6gs4+3Y5frIBTI366ZU9CXv6iBVJpRYdb6Od7vHAPQNlKE7qFI3wTS/g2nvCNTOFbucI3szm283npsA3d0LjStnSefbV0digUk+CzqXWlaOv13+NdCyRsFuqtDtva3aMp2dC/ZHP7F8K29w8I+wOHbwT9iUdERERERMT/wicf1y2hec2rxwAAAABJRU5ErkJggg==" alt=""></a>
-                <a href="https://twitter.com/coschedule"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAACHCAMAAAALObo4AAAAaVBMVEUAAAD///8PDw/x8fGXl5e/v79OTk7Q0NAkJCSdnZ2JiYkrKyv5+fnIyMjl5eWhoaGBgYFtbW3r6+s/Pz9XV1fb29sWFhazs7NycnJHR0eoqKi5ubloaGh4eHiRkZE5OTkdHR1fX18yMjITwr/6AAADrElEQVR4nO2cW2NDMBSAQ5CWuJRqq3rd//+RQ2urCY6TWDzke9geauk3uZ0cCWK9oa7v2eQ/sT3fpe3Xk7eFE/yrQ0vg0E8PttFiUbNhvx5bbRY129ZDr8ZLpPJgmjUIYbUH1dc2Wja08nB0W1Q4FqF6OmyXgBJXt0ODS3zdCg0+8XQrNHjkf+eUIdZhYTAYDAaDwWBQSVBcb+cyvu2yh0aLZxi1OQ2enw96JA4xt7q4nVVrcSyQJXtzlntJavVIL+2nthdyjtQgeQ6/Nuxb1CSvT30mkeLYwdMSBRVrWNbV3t9eWZ8Um1s4Vn8cwjSiIQ2Lp22rSZAapKlw0B0ZvBsf4DM+r7+PviYvHGgbHSK0RtaWMNXdEohG0/W8DOHxbMug42mBg6DDCjVOjO4RHpffYuKx65xpDfaVnOumXCI0Pj0sNjJGD/eVH959hmKqhew7JV2GLjtMa7RgaoWQTbeQcGCQh7TSFyeURttvf6C+MHFzBlrwHVKjX/G56Ma6QA98Lk7wn+bX3lWQQUzuocZJVGB0uyM86F38FSAe4mmDl50GV0I88oeEx0gTDG/P9qIY4sGkcpPF30Dv866kLL54901nuBv2kNEA9AUaMQbxgIUxw4zckFnIPlC4KvI4Szg86h/Q0XKCm4THnidVKHZT4oGb4d5UzbDqE73VEYaHnIcyZDQgAQ4QfJBcc1TmcZTygEc4U6CXUA0byPIIApfqLsCpFEAqp9GNlCWQ3kSgqKX2g7i5KJnnOGrZ0kEYGs5Fxd4OFROukqf3Cu6ICo2q0wCW86Mo23KzlWutgyvj2WRniZFVbo77S5JjPeTmll+uPI1SzrF1g85W9pALQ1TdDskIlSrTIDa6aVj43IsI0MpRzIwEPQBoqqWP4o1QoDWsANX7wgKciNpaaUC1VezzpzGc+QMZOkE4ShbONFlsL6e3nTPdyaZexjmdS5jMshoEGsOHj2UtAtist/C25w0wPbTs/tovH9hORx8byWIfob1lwV2+hQMeUCP51dsnj/b3vTi5EXgI40fFu2v3YViWpRvms0L16Dld8kzs+Yv9dJnDEkU5a0ahzvSTbyQePBLj8aJnAw4xaHkbqoyHxQQnNl49NHfUdtVBCn+wftJjslirEJL5JfsYRniaM9fXdC4hyApvt9tdLvsiC/Sf4DEYDAaDwWAwqGIdJz3t1Zy/Xct55LWcz17LefW1nN9fzfsM1vJ+h9W870K3yM/7P1bzPpTVvB/G0v6+nG+wtikjc85HCgAAAABJRU5ErkJggg==" alt=""></a>
-                <a href="https://www.linkedin.com/company/coschedule/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAMAAAC93eDPAAAAYFBMVEUAAAD///+Wlpbq6uozMzOfn59eXl6srKza2tpycnIpKSkJCQlZWVmbm5uOjo7z8/NHR0ezs7OGhobGxsZ6enpkZGS6urpBQUEbGxsSEhLT09Pi4uJOTk5UVFQgICA4ODjLmtxTAAACgElEQVR4nO3c7XKqMBAG4ASLfAgEBa2Fo97/XRZKGYRs27AddtMz+/4l4mNAEjcTlf5MHCXpQRHlkCZRPL6z+gTsqd59yj5+JgT0gD7BRGDogiH7kcAmGAyK7SoMCXpCzClQKu4IjJehz14r5k7oukFF3IRIJdyERKXchFSRjQtfhR0g+RNJs7o4l4x3S9EMEwpzeeUBJEZPuVwZBIGeZUf//FoIOsMbsSBZCrRuiAnGJuiCVFAAAr0jJTQQQVMO6iko0EdCQgYTKCd4NUwwhATwbqQlnGFCS0goYUJFSDhATyatc0KCuoAE0iH7lfs6KLAbzD9awnVnEU60gu4ZvTQwlCDeZkOVIe+DjxRTR1TE98GU5Bgb01Y50wRaIpFI/r9cH+XtVj746ol11Q6Dy64JS+Q5QmDK8nhuAMyqxjpyeVy8MEfVR6zyQveBXn4ghB8H7tCEK0Qg0ITEnm71adevN2AJEQjos/oXAJIAFwWGVCtrhzgC/PNjzMpKEYYQ5N8KtL5sTvjuKgxZtfyDITik5ieYFcXLjQhrLsVWBH3nJ7hX7TYjuJfTf0FowlNdHL887Fw/RROq8VPW8HjlXijBEp6++GkFtnBeVEASstlJQINzsQZHWBYhwGvhejOgCNZQCJZQXYslKMLZOk0MtHJdWcEQWvvJdwKauRatMATg63YjJgDP3hKoJG9JCO3TvADfCSEIQQhCEIIQhCAEIQhBCEIQghCEIAQqArDG8+NSKUB4AFUW16W6LA+WKWbVrNA6ntsFN3Uv7GaZ3UwikczDvnPq4MMGNg+28XmwmdGDLZ0ebGz1YXuvB5ucfdjq7cOGdx+2/fvw5wea8y8g3gGmqyF8Ac78zwAAAABJRU5ErkJggg==" alt=""></a>
-                <a href="https://www.pinterest.com/coschedule/"><img src="data:image/png;base64,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" alt=""></a>
-                <a href="https://www.instagram.com/coschedule/"><img src="data:image/png;base64,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" alt=""></a>
+                <a href="https://www.g2.com/products/coschedule-marketing-suite/reviews"><img
+                        src="data:image/png;base64,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"
+                        alt=""></a>
+                <a href="https://www.facebook.com/coschedule"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAV1BMVEX///8AAADKyspmZmaCgoL39/fk5OSIiIj09PSjo6NsbGzd3d3p6enExMSsrKydnZ12dnaWlpZFRUU9PT0hISEmJibU1NRhYWFXV1dKSkpcXFy4uLgcHBxL78OkAAADRklEQVR4nO1b2XKDMAyME24Icc6mx/9/Z6G0DUlAWsmmnul4HztjdutjJcvKahURERERERGhQ9Fk23aX2Kqyya7dZk3xh+TpZW9fzQMO1X6d/gV7Vr49ct9wLbNl2ZvyOM8+4Fg2i9HX9sTR9zjZehn6DcI+YHPxTp9VOH2Pyu8spImMvkfi8WCuz3L+bi+sPdGnuYa+R+7FGDL25M3j6MEWtnr6HltX/p0bvzE7N3718t+Qu/Bbd35jbGB+BwUe5n+AchWc998Nqp3oeP7uoTiNmU9+Y8SOlDr43xSOUlf2tgF/INyIa9/8xohiYwHHX/s+Xl3KOM6SRUDzj8ekg3SuBOcHT8DH0+GirRM/CWD+95x50gIqlP+C8bfPI5nggSaqWP59mBjJCNhg/DU2Ae9yAeAUYEH4Y+pUcUOhwNxA9y/zotF+Qu6NJcRvyrtBlwEvslHTAKPQeAs0V2xMF5N4fjQMj61dELl4MwJX4E4AO/M38LkROptjAYKL+5XjT9EvKQUYLibCiYBWAJcW7JcWsGcEwIUQ5SbkQmJx4D/xmndIxrZe5t8ARh/owkkD/A9EeolkUrQbIzZEpFbIWtBWhFyH5gUUiI3Tl6TWTQCSTE8kUiMgF9J5AcgOYswY2UXzAqBARmfnSDY0/wXIRumsCPGheQHIDmKcyE0AVNKgBSBLYLO6w9jQvv5Q1xkUE+glwIvS4+NMvKE8g96EeF1IGw2ZYwhtIzcBtBHhlSm1ANqK8dKUWgAdjCAzdRNAh2MkIXETwCQkupRMIoCrUgRPSoOn5cEvJsGvZrAZKwXwBQLN9VwgAKgVggUKnYCp0tojwAKBTgBSogGLVCoBUJEKLNOpBGDvZ1ihUiUArNVC39MIAEu12BRoBMBdFUhIVAiAy/WQGSkECJ7ugOxcLkDybpby92yxgLOoqYVPC8QChC0tbPlXKkD6gs4+3Y5frIBTI366ZU9CXv6iBVJpRYdb6Od7vHAPQNlKE7qFI3wTS/g2nvCNTOFbucI3szm283npsA3d0LjStnSefbV0digUk+CzqXWlaOv13+NdCyRsFuqtDtva3aMp2dC/ZHP7F8K29w8I+wOHbwT9iUdERERERMT/wicf1y2hec2rxwAAAABJRU5ErkJggg=="
+                        alt=""></a>
+                <a href="https://twitter.com/coschedule"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAACHCAMAAAALObo4AAAAaVBMVEUAAAD///8PDw/x8fGXl5e/v79OTk7Q0NAkJCSdnZ2JiYkrKyv5+fnIyMjl5eWhoaGBgYFtbW3r6+s/Pz9XV1fb29sWFhazs7NycnJHR0eoqKi5ubloaGh4eHiRkZE5OTkdHR1fX18yMjITwr/6AAADrElEQVR4nO2cW2NDMBSAQ5CWuJRqq3rd//+RQ2urCY6TWDzke9geauk3uZ0cCWK9oa7v2eQ/sT3fpe3Xk7eFE/yrQ0vg0E8PttFiUbNhvx5bbRY129ZDr8ZLpPJgmjUIYbUH1dc2Wja08nB0W1Q4FqF6OmyXgBJXt0ODS3zdCg0+8XQrNHjkf+eUIdZhYTAYDAaDwWBQSVBcb+cyvu2yh0aLZxi1OQ2enw96JA4xt7q4nVVrcSyQJXtzlntJavVIL+2nthdyjtQgeQ6/Nuxb1CSvT30mkeLYwdMSBRVrWNbV3t9eWZ8Um1s4Vn8cwjSiIQ2Lp22rSZAapKlw0B0ZvBsf4DM+r7+PviYvHGgbHSK0RtaWMNXdEohG0/W8DOHxbMug42mBg6DDCjVOjO4RHpffYuKx65xpDfaVnOumXCI0Pj0sNjJGD/eVH959hmKqhew7JV2GLjtMa7RgaoWQTbeQcGCQh7TSFyeURttvf6C+MHFzBlrwHVKjX/G56Ma6QA98Lk7wn+bX3lWQQUzuocZJVGB0uyM86F38FSAe4mmDl50GV0I88oeEx0gTDG/P9qIY4sGkcpPF30Dv866kLL54901nuBv2kNEA9AUaMQbxgIUxw4zckFnIPlC4KvI4Szg86h/Q0XKCm4THnidVKHZT4oGb4d5UzbDqE73VEYaHnIcyZDQgAQ4QfJBcc1TmcZTygEc4U6CXUA0byPIIApfqLsCpFEAqp9GNlCWQ3kSgqKX2g7i5KJnnOGrZ0kEYGs5Fxd4OFROukqf3Cu6ICo2q0wCW86Mo23KzlWutgyvj2WRniZFVbo77S5JjPeTmll+uPI1SzrF1g85W9pALQ1TdDskIlSrTIDa6aVj43IsI0MpRzIwEPQBoqqWP4o1QoDWsANX7wgKciNpaaUC1VezzpzGc+QMZOkE4ShbONFlsL6e3nTPdyaZexjmdS5jMshoEGsOHj2UtAtist/C25w0wPbTs/tovH9hORx8byWIfob1lwV2+hQMeUCP51dsnj/b3vTi5EXgI40fFu2v3YViWpRvms0L16Dld8kzs+Yv9dJnDEkU5a0ahzvSTbyQePBLj8aJnAw4xaHkbqoyHxQQnNl49NHfUdtVBCn+wftJjslirEJL5JfsYRniaM9fXdC4hyApvt9tdLvsiC/Sf4DEYDAaDwWAwqGIdJz3t1Zy/Xct55LWcz17LefW1nN9fzfsM1vJ+h9W870K3yM/7P1bzPpTVvB/G0v6+nG+wtikjc85HCgAAAABJRU5ErkJggg=="
+                        alt=""></a>
+                <a href="https://www.linkedin.com/company/coschedule/"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIIAAACCCAMAAAC93eDPAAAAYFBMVEUAAAD///+Wlpbq6uozMzOfn59eXl6srKza2tpycnIpKSkJCQlZWVmbm5uOjo7z8/NHR0ezs7OGhobGxsZ6enpkZGS6urpBQUEbGxsSEhLT09Pi4uJOTk5UVFQgICA4ODjLmtxTAAACgElEQVR4nO3c7XKqMBAG4ASLfAgEBa2Fo97/XRZKGYRs27AddtMz+/4l4mNAEjcTlf5MHCXpQRHlkCZRPL6z+gTsqd59yj5+JgT0gD7BRGDogiH7kcAmGAyK7SoMCXpCzClQKu4IjJehz14r5k7oukFF3IRIJdyERKXchFSRjQtfhR0g+RNJs7o4l4x3S9EMEwpzeeUBJEZPuVwZBIGeZUf//FoIOsMbsSBZCrRuiAnGJuiCVFAAAr0jJTQQQVMO6iko0EdCQgYTKCd4NUwwhATwbqQlnGFCS0goYUJFSDhATyatc0KCuoAE0iH7lfs6KLAbzD9awnVnEU60gu4ZvTQwlCDeZkOVIe+DjxRTR1TE98GU5Bgb01Y50wRaIpFI/r9cH+XtVj746ol11Q6Dy64JS+Q5QmDK8nhuAMyqxjpyeVy8MEfVR6zyQveBXn4ghB8H7tCEK0Qg0ITEnm71adevN2AJEQjos/oXAJIAFwWGVCtrhzgC/PNjzMpKEYYQ5N8KtL5sTvjuKgxZtfyDITik5ieYFcXLjQhrLsVWBH3nJ7hX7TYjuJfTf0FowlNdHL887Fw/RROq8VPW8HjlXijBEp6++GkFtnBeVEASstlJQINzsQZHWBYhwGvhejOgCNZQCJZQXYslKMLZOk0MtHJdWcEQWvvJdwKauRatMATg63YjJgDP3hKoJG9JCO3TvADfCSEIQQhCEIIQhCAEIQhBCEIQghCEIAQqArDG8+NSKUB4AFUW16W6LA+WKWbVrNA6ntsFN3Uv7GaZ3UwikczDvnPq4MMGNg+28XmwmdGDLZ0ebGz1YXuvB5ucfdjq7cOGdx+2/fvw5wea8y8g3gGmqyF8Ac78zwAAAABJRU5ErkJggg=="
+                        alt=""></a>
+                <a href="https://www.pinterest.com/coschedule/"><img
+                        src="data:image/png;base64,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"
+                        alt=""></a>
+                <a href="https://www.instagram.com/coschedule/"><img
+                        src="data:image/png;base64,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"
+                        alt=""></a>
             </div>
-        
-        </div>
 
-        <div id="menu">
-            <div></div>
         </div>
-
     </div>
+<!-- 
+    <div id="menu"> 
+        <div><img src="https://coschedule.com/img/product/marketing-calendar-product-icon.png" alt="">
+            <h2>Calender Organiser</h2>
+        </div>
+        <div><img src="https://coschedule.com/img/product/content-organizer-product-icon.png" alt="">
+            <h2>Content Organiser</h2>
+        </div>
+        <div><img src="https://coschedule.com/img/product/work-organizer-product-icon.png" alt="">
+            <h2>Work Organiser</h2>
+        </div>
+        <div><img src="https://coschedule.com/img/product/asset-organizer-product-icon.png" alt="">
+            <h2>Asset Organiser</h2>
+        </div>
+    </div>  -->
+
 
 </body>
+<script>
+    let x = document.querySelectorAll('.links>div');
+    x.forEach(e=>{
+        e.addEventListener('click', function(){
+            window.location.href='signup.html';
+        })
+    })
+</script>
 
 </html>

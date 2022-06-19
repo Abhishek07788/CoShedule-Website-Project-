@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoSchedule head line Studio</title>
+    <link rel="icon" href="title logo.png">
     <style>
+        a{
+            text-decoration:none; 
+        }
         #parent{
             width:75%;
             margin-top: 145px;
@@ -550,10 +554,10 @@
             <p style="margin-left:-36px;">Studio Pro</p>
         </div>
         <div id="B">
-            <p>Sign In</p>
+            <p><a style="color:#4b4b4b;" href="login.html">Sign In</a></p>
         </div>
         </div>
-        <img id="msglogo"; src="https://marketing-assets.pinpointhq.com/wp-content/uploads/2020/03/pinpoint-myinterview-integration-dd97735c32858890370432e28b2a9ebc.png" alt="">
+        <a href="login.html"><img id="msglogo"; src="https://marketing-assets.pinpointhq.com/wp-content/uploads/2020/03/pinpoint-myinterview-integration-dd97735c32858890370432e28b2a9ebc.png" alt=""></a>  
         <h1 class="C">Write better headlines that will boost your traffic.</h1>
         <p class="D">Eliminate guesswork and outperform your competition with Headline Studio.</p>
         <img id="welcomeImg" src="https://i.postimg.cc/cLq8SXR0/Screenshot-2022-06-16-123430.png" alt="">
@@ -765,3 +769,39 @@
     </div>
     </body>
 </html>
+<script>
+    let button = document.querySelector("#butt");
+    button.addEventListener("click",function(event){
+       event.preventDefault();
+       let form=document.querySelector("#rightlogin");
+       let data={
+           name:form.name.value,
+           email:form.email.value,
+           company:form.company.value,
+           webUrl:form.url.value,
+        
+       }
+       if(checkEmail(data.email)===true){
+               UserData.push(data);
+           localStorage.setItem("DemoData",JSON.stringify(UserData));
+           alert("data recorded Create a free account for demo");
+            window.open("https://coschedule.com/product-demo");
+           
+       }else{
+           alert("Account Already Exists")
+       }
+    })
+
+    //checking email is alredy persent in array or not;
+    function checkEmail(email){
+       let filtered=UserData.filter(function(element){
+           return email===element.email;
+       })
+       if(filtered.length>0){
+           return false;
+       }else{
+           return true;
+       }
+    }
+
+</script>

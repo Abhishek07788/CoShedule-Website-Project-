@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoSchedule | Home</title>
+    <link rel="icon" href="title logo.png">
     <style>
           a{
             text-decoration:none; 
@@ -331,21 +332,28 @@
             align-items: center;
             grid-template-columns: repeat(5,1fr);
         }
-        .navbar p:hover{
+        .navbar>p:hover{
             color:#f37e5de3;
         }
-        #B>button{
-            padding: 11px;
+        .navbar a{
+            color: #545252;
+        }
+        .navbar a:hover{
+            color: #f37e5de3;
+        }
+        #B>a>h3{
+            padding:11px 3px 11px 3px;
             height: 70%;
             width: 160px;
             font-size: 17px;
             color: white;
+            text-align: center;
             background-color:#f37e5de3;
             border-color: transparent;
             border-radius: 10px;
-            margin-right: 15px;
+            margin-right: 30px;
         }
-        #B>button:hover{
+        #B a>h3:hover{
             background-color:#d1694de3;
         }
         /* ---------------------------------------------------------- */
@@ -859,15 +867,15 @@
                     <a href=""><p>Marketing Strategy Report</p></a>
                 </div>
             </div>
-            <p>Pricing</p>
+            <p style="margin-bottom:20px;"><a href="pricing.html">Pricing</a></p>
         </div>
         <div id="B">
-            <p>Sign In</p>
-            <p>Get Started Free</p>
-            <button>Get A Demo</button>
+            <p><a href="login.html">Sign In</a></p>
+            <p><a href="productdemo.html">Get Started Free</a></p>
+            <a href="signup.html"><h3>Get A Demo</h3></a>
         </div>
         </div> 
-        <img id="msglogo"; src="https://marketing-assets.pinpointhq.com/wp-content/uploads/2020/03/pinpoint-myinterview-integration-dd97735c32858890370432e28b2a9ebc.png" alt="">
+       <a href="login.html"><img id="msglogo"; src="https://marketing-assets.pinpointhq.com/wp-content/uploads/2020/03/pinpoint-myinterview-integration-dd97735c32858890370432e28b2a9ebc.png" alt=""></a>
         <h1 class="C">Organize All Of Your Marketing In One Place. From Any Place.</h1>
         <p class="D">Get more done in less time with the only work management software for marketers.</p>
         <p class="E">Request Your Demo Now</p>

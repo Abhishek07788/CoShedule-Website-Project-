@@ -6,7 +6,10 @@ This website is a clone of "coschedule.com", CoSchedule Marketing Suite is a fam
 <h3/>
 
 <h2>
-Group Project: 4 Collaborators | Duration: 05 Days
+Group Project: 4 Collaborators  
+<h2/>
+<h2>
+  Duration: 05 Days
 <h2/>
 <h2>
 TECH STACK: HTML | CSS | JAVASCRIPT

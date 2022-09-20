@@ -1,6 +1,8 @@
-Coshedule-website clone
-Built within 5-days during construct week at Masai school
-Collaborative project team of 5
+<h4>Team:-<h4/>
+<h4>Abhishek Pratap Solanki (as a Team Lead)<h4/>
+<h4>Guddu Tiwari (as a team member)<h4/>
+<h4> (as a team member)<h4/>
+
 <h3>
 This website is a clone of "coschedule.com", CoSchedule Marketing Suite is a family of agile marketing products that helps you coordinate your process, projects, and teams. In this team project I created navbar, Home page, footer part and Headline page and Build Your Case For CoSchedule page.
 <h3/>
